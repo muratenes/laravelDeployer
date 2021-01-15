@@ -1,0 +1,4 @@
+Nginx yüklenmeli
+Php7.4 yüklenmesi gerek yada ilgili sürüm
+composer yüklenmesi gerek
+python3 yüklü olması gerek

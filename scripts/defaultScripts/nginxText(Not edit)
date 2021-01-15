@@ -1,0 +1,35 @@
+python3
+f = open('/etc/nginx/sites-available/site_folder','w')
+a = """
+server {
+
+listen 80;
+listen [::]:80;
+root  parent_foldersite_folder/public;
+index index.php index.html index.htm index.nginx-debian.html;
+
+server_name domain_name;
+
+location / {
+        try_files $uri $uri/ /index.php?$query_string;
+}
+
+location ~ \.php$ {
+     include snippets/fastcgi-php.conf;
+     fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+ }
+
+location ~ /\.ht {
+    deny all;
+}
+
+location = /favicon.ico { access_log off; log_not_found off; }
+
+
+}
+
+
+
+"""
+f.write(str(a))
+f.close()

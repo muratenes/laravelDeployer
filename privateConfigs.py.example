@@ -1,0 +1,13 @@
+ssh_user = "root"
+ssh_ip = "ip"
+ssh_password = "pass"
+site_folder_name = "example.com"
+static_files_folder="static"
+media_files_folder="media"
+virtual_env_name="venv"
+domain_list = 'www.example.com example.com'
+sites_container_folder = "/home/server/"
+github_user_name = "name"
+github_password = "pass"
+github_repository_name = "githubRepoName"
+requirements_file_name="requirements.txt"
